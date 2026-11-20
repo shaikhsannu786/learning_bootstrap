@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar md:navbar-expand bg-primary"
+        data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand h1" href="#">
+            <img src="images/logophoto.png"
+              alt="Logo" width="50" height="40"
+              class="d-inline-block align-text-top">MobileShop </a>
+
+          <button class="btn-icon navbar-toggler"
+            type="button" data-bs-toggle="drawer"
+            data-bs-target="#navbarDrawer"
+            aria-controls="navbarDrawer" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+          </button>
+
+          <dialog class="drawer drawer-end" tabindex="-1"
+            id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+            <div class="drawer-header">
+              < <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+
+              <button type="button" class="btn-close"
+                data-bs-dismiss="drawer"
+                aria-label="Close"></button>
+            </div>
+            <div class="drawer-body mb-2 md:mb-0">
+              <ul class="nav navbar-nav nav-pills me-auto">
+                <li class="nav-item">
+                  <a class="nav-link active bg-danger"
+                    aria-current="page"
+                    href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"
+                    href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link"
+                    href="products.html">Products</a>
+                </li>
+
+                <li class="nav-item">
+                  <button class="nav-link" type="button"
+                    data-bs-toggle="menu" aria-expanded="false">
+                    Gallary
+                  </button>
+                  <div class="menu">
+                    <a class="menu-item" href="photo.html">Photo</a>
+                    <a class="menu-item" href="video.html">Video</a>
+                  </div>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link"
+                    href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"
+                    href="contact.html">Contact Us</a>
+                </li>
+
+              </ul>
+            </div>
+          </dialog>
+        </div>
+      </nav>
+    </header>
+    <main>
+
+      <section>
+        <div id="carouselExample"
+          class="carousel carousel-overlay slide carousel-fade"
+          data-bs-autoplay="true">
+          <div class="carousel-inner rounded-5">
+            <div class="carousel-item active" data-bs-interval="6000">
+              <img src="images/smartphone.jpg" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item " data-bs-interval="1000">
+              <img src="images/mobphone.jpg" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="images/shpim4.jpg" class="d-block w-100"
+                alt="...">
+            </div>
+            <div class="carousel-item " data-bs-interval="4000">
+              <img src="images/bmw.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <div class="carousel-overlay-controls">
+            <div>
+              <button class="btn-icon btn-sm btn-subtle theme-secondary"
+                type="button" data-bs-target="#carouselExample"
+                data-bs-slide="prev">
+                <span class="carousel-icon-prev" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="btn-icon btn-sm btn-subtle theme-secondary"
+                type="button" data-bs-target="#carouselExample"
+                data-bs-slide="next">
+                <span class="carousel-icon-next" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="carousel-indicators">
+              <button type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+              <button type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="md:col-6">
+              <h1>About US </h1>
+              <p>Welcome to MobileShop! We are dedicated to providing the latest
+                smartphones and
+                mobile accessories at affordable prices. Our goal is to make
+                technology accessible to
+                everyone by offering quality products from trusted brands. We
+                believe in delivering the best shopping experience with a wide
+                range of mobile phones,
+                accessories and the latest technology.</p>
+              <p>At MobileShop, customer satisfaction is our top priority. We
+                focus on providing excellent customer service, reliable products
+                and competitive prices.
+                Whether you are looking for a new smartphone, headphones,
+                chargers or other mobile accessories, we are here to help you
+                find the right product.
+                Thank you for choosing MobileShop!</p>
+
+              <a href="about.html">
+                <button type="button"
+                  class="btn-solid theme-danger">More info...</button>
+              </a>
+            </div>
+            <div class="md:col-6">
+              <img src="images/shop.jpg" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <style>
+          .card:hover{
+            background-color: red;
+            color: white;
+            border-radius: 10px;
+          }
+          /* .card-text:hover{ 
+            color: white;
+         }  */
+        </style>
+
+      <section class="mt-8 mb-8 bg-black">
+        <div class="container pb-6">
+          <div class="row">
+            <h1 class="fg-white p-6"> Our Products</h1>
+            <div class="md:col-3">
+              <div class="card">
+                <div class="card-body">
+                  <img src="images/iphone.jpg"
+                    class="card-img" alt="...">
+                  <h5 class="mt-2 mb-0"> IPhone</h5>
+                  <p class="card-text">Discover Apple iPhones featuring premium
+                    design, powerful performance, advanced cameras, smooth iOS
+                    experience and excellent quality. </p>
+
+                </div>
+              </div></div>
+            <div class="md:col-3">
+              <div class="card">
+                <div class="card-body">
+                  <img src="images/oppp.jpg" class="card-img" alt="...">
+                  <h5 class="mt-2 mb-0"> Oppo Phone</h5>
+                  <p class="card-text">Explore OPPO smartphones with stylish
+                    designs, impressive camera quality, fast charging technology
+                    and smooth performance. </p>
+
+                </div>
+              </div></div>
+            <div class="md:col-3"><div class="card">
+                <div class="card-body">
+                  <img src="images/vivo phone.jpg" class="card-img" alt="...">
+                  <h5 class="mt-2 mb-0">Vivo Phone</h5>
+                  <p class="card-text">Vivo offers modern smartphones with
+                    excellent photography features, beautiful displays, stylish
+                    designs and reliable battery performance. .</p>
+                </div>
+              </div>
+            </div>
+            <div class="md:col-3">
+              <div class="card">
+                <div class="card-body">
+                  <img src="images/samsung.jpg" class="card-img" alt="...">
+                  <h5 class="mt-2 mb-0">Samsung phone</h5>
+                  <p class="card-text">Samsung smartphones feature advanced
+                    technology, vibrant displays, powerful cameras, smooth
+                    performance and innovative features.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous">
+
+    </script>
+
+  </body>
+</html>

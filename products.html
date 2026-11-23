@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous">
+
+      <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+
+  </head>
+  <style>
+    .product-gallary img{
+      width: 100%;
+      height: 250px;
+      object-fit: contain;
+      background-color: white;
+    }
+  </style>
+  <body>
+    <header>
+      <nav class="navbar md:navbar-expand bg-primary"
+        data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand h1" href="#">
+            <img src="images/logophoto.png"
+              alt="Logo" width="30" height="24"
+              class="d-inline-block align-text-top">MobileShop </a>
+
+          <button class="btn-icon navbar-toggler"
+            type="button" data-bs-toggle="drawer"
+            data-bs-target="#navbarDrawer"
+            aria-controls="navbarDrawer" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+          </button>
+
+          <dialog class="drawer drawer-end" tabindex="-1"
+            id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+            <div class="drawer-header">
+              < <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+
+              <button type="button" class="btn-close"
+                data-bs-dismiss="drawer"
+                aria-label="Close"></button>
+            </div>
+            <div class="drawer-body mb-2 md:mb-0">
+              <ul class="nav navbar-nav nav-pills me-auto">
+                <li class="nav-item">
+                  <a class="nav-link"
+                    aria-current="page"
+                    href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link "
+                    href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link active bg-danger"
+                    href="Products.html">Products</a>
+                </li>
+
+                <li class="nav-item">
+                  <button class="nav-link" type="button"
+                    data-bs-toggle="menu" aria-expanded="false">
+                    Gallary
+                  </button>
+                  <div class="menu">
+                    <a class="menu-item" href="photo.html">Photo</a>
+                    <a class="menu-item" href="video.html">Video</a>
+                  </div>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link"
+                    href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"
+                    href="contact.html">Contact Us</a>
+                </li>
+
+              </ul>
+            </div>
+          </dialog>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <style>
+          .card:hover{
+            background-color: red;
+            color: white;
+            border-radius: 10px;
+          }
+          /* .card-text:hover{ 
+            color: white;
+         }  */
+        </style>
+
+      <section class="mt-8 mb-8 bg-black">
+        <div class="container pb-6">
+          <div class="row">
+            <h1 class="fg-white p-6"> Our Products</h1>
+            <div class="md:col-3">
+              <div class="card">
+                <div class="card-body">
+                  <img src="images/iphone.jpg"
+                    class="card-img" alt="...">
+                  <h5 class="mt-2 mb-0"> IPhone</h5>
+                  <p class="card-text">Discover Apple iPhones featuring premium
+                    design, powerful performance, advanced cameras, smooth iOS
+                    experience and excellent quality. </p>
+                  <button type="button"
+                    class="btn-solid theme-danger"
+                    data-bs-toggle="dialog"
+                    data-bs-target="#iphone1">More info...</button>
+
+                </div>
+              </div></div>
+            <div class="md:col-3">
+              <div class="card">
+                <div class="card-body">
+                  <img src="images/oppp.jpg" class="card-img" alt="...">
+                  <h5 class="mt-2 mb-0"> Oppo Phone</h5>
+                  <p class="card-text">Explore OPPO smartphones with stylish
+                    designs, impressive camera quality, fast charging technology
+                    and smooth performance. </p>
+                  <button type="button"
+                    class="btn-solid theme-danger"
+                    data-bs-toggle="dialog"
+                    data-bs-target="#oppo1">More info...</button>
+
+                </div>
+              </div></div>
+            <div class="md:col-3"><div class="card">
+                <div class="card-body">
+                  <img src="images/vivo phone.jpg" class="card-img" alt="...">
+                  <h5 class="mt-2 mb-0">Vivo Phone</h5>
+                  <p class="card-text">Vivo offers modern smartphones with
+                    excellent photography features, beautiful displays, stylish
+                    designs and reliable battery performance. .</p>
+                  <button type="button"
+                    class="btn-solid theme-danger"
+                    data-bs-toggle="dialog"
+                    data-bs-target="#vivo1">More info...</button>
+
+                </div>
+              </div>
+            </div>
+            <div class="md:col-3">
+              <div class="card">
+                <div class="card-body">
+                  <img src="images/samsung.jpg" class="card-img" alt="...">
+                  <h5 class="mt-2 mb-0">Samsung phone</h5>
+                  <p class="card-text">Samsung smartphones feature advanced
+                    technology,
+                    vibrant displays, powerful cameras,
+                    smooth performance and innovative features.</p>
+                  <button type="button"
+                    class="btn-solid theme-danger"
+                    data-bs-toggle="dialog"
+                    data-bs-target="#samsung1">More info...</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <dialog class="dialog dialog-xl dialog-scrollable"
+        id="iphone1" data-bs-theme="dark">
+        <div class="dialog-header">
+          <h1 class="dialog-title">IPhone</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="dialog"
+            aria-label="Close"></button>
+        </div>
+        <div class="dialog-body">
+          <div class="container">
+            <div class="row">
+              <div class="md:col-6">
+
+                <img src="images/iphone.jpg" image-fluid />
+              </div>
+
+              <div class="md:col-6">
+                <p> Apple iPhone is one of the most popular smartphones in the
+                  world.
+                  It features a premium design, powerful processor and advanced
+                  camera
+                  system. The iPhone provides excellent photo and video quality.
+                  Its iOS operating system offers a smooth, secure and
+                  user-friendly
+                  experience. It is suitable for photography, gaming,
+                  entertainment
+                  and everyday use.
+                </p>
+                Apple iPhone is one of the most popular smartphones in the
+                world.
+                It features a premium design, powerful processor and advanced
+                camera
+                system. The iPhone provides excellent photo and video quality.
+                Its iOS operating system offers a smooth, secure and
+                user-friendly
+                experience. It is suitable for photography, gaming,
+                entertainment
+                and everyday use.
+              </p>
+
+            </div>
+            <div class="md:col-4
+              product-gallary mt-5">
+              <img src="images/i1.jpg" image-fluid />
+            </div>
+            <div class="md:col-4  product-gallary mt-5">
+              <img src="images/i2.jpg" image-fluid />
+            </div>
+            <div class="md:col-4  product-gallary mt-5">
+              <img src="images/i3.jpg" image-fluid />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dialog-footer">
+        <button type="button" class="btn-solid theme-secondary"
+          data-bs-dismiss="dialog">Close</button>
+      </div>
+    </dialog>
+    <section>
+      <dialog class="dialog dialog-xl dialog-scrollable"
+        id="oppo1" data-bs-theme="dark">
+        <div class="dialog-header">
+          <h1 class="dialog-title">OPPO</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="dialog"
+            aria-label="Close"></button>
+        </div>
+        <div class="dialog-body">
+          <div class="container">
+            <div class="row">
+              <div class="md:col-6">
+
+                <img src="images/oppp.jpg" image-fluid />
+              </div>
+
+              <div class="md:col-6">
+                <p> OPPO is a well-known smartphone brand that offers stylish,
+                  innovative, and user-friendly mobile phones. The company is
+                  popular
+                  for its attractive designs, advanced camera technology,
+                  high-quality displays,
+                  and reliable performance. OPPO smartphones are designed to
+                  meet the needs of
+                  different users, including students, professionals,
+                  photography lovers,
+                  and everyday mobile users. The brand offers a wide range of
+                  smartphones
+                  with different features and price ranges, making them suitable
+                  for various budgets.
+                  OPPO focuses on combining modern technology with elegant
+                  designs to provide
+                  a comfortable and enjoyable smartphone experience..
+                </p>
+                <p>
+                  OPPO smartphones come with several useful features, including
+                  high-resolution cameras, fast charging technology,
+                  powerful processors, large displays, and smooth software
+                  experiences. Many OPPO devices are designed for photography
+                  and selfies, allowing users to capture beautiful photos and
+                  videos. The brand also focuses on battery performance,
+                  stylish appearance, and innovative technology. OPPO
+                  continuously introduces new smartphone models to improve
+                  performance,
+                  design, and user experience. With its combination of quality,
+                  innovation, attractive design, and advanced features,
+                  OPPO has become a popular choice among smartphone users around
+                  the world.
+                </p>
+
+              </div>
+              <div class="md:col-4
+              product-gallary mt-5">
+                <img src="images/opppoooo1.png" image-fluid />
+              </div>
+              <div class="md:col-4  product-gallary mt-5">
+                <img src="images/oppo2.png" image-fluid />
+              </div>
+              <div class="md:col-4  product-gallary mt-5">
+                <img src="images/oppo3.png" image-fluid />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <button type="button" class="btn-solid theme-secondary"
+            data-bs-dismiss="dialog">Close</button>
+        </div>
+      </dialog>
+
+      <dialog class="dialog dialog-xl dialog-scrollable"
+        id="vivo1" data-bs-theme="dark">
+        <div class="dialog-header">
+          <h1 class="dialog-title">vivo</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="dialog"
+            aria-label="Close"></button>
+        </div>
+        <div class="dialog-body">
+          <div class="container">
+            <div class="row">
+              <div class="md:col-6">
+
+                <img src="images/vio.jpg" image-fluid />
+              </div>
+
+              <div class="md:col-6">
+                <p> Vivo is a popular smartphone brand known for its stylish
+                  design, innovative technology, and excellent camera features.
+                  The company offers smartphones for different types of users,
+                  including students, professionals, and photography
+                  enthusiasts. Vivo phones are designed with attractive looks,
+                  high-quality displays, and user-friendly features. The brand
+                  focuses on providing a good smartphone experience with modern
+                  technology, smooth performance, and a variety of models at
+                  different price ranges.
+                </p>
+                <p>
+                  Vivo smartphones include features such as high-resolution
+                  cameras, powerful processors, long-lasting batteries, fast
+                  charging, and beautiful displays. Many Vivo models are
+                  especially popular for their photography and selfie
+                  capabilities, making them a good choice for users who enjoy
+                  capturing photos and videos. Vivo continuously improves its
+                  smartphone technology, design, and performance to meet the
+                  changing needs of customers. With its combination of
+                  attractive design, camera quality, and useful features, Vivo
+                  has become a trusted smartphone brand worldwide.
+                </p>
+
+              </div>
+              <div class="md:col-4
+              product-gallary mt-5">
+                <img src="images/vivo1.png" image-fluid />
+              </div>
+              <div class="md:col-4  product-gallary mt-5">
+                <img src="images/vivo2.png" image-fluid />
+              </div>
+              <div class="md:col-4  product-gallary mt-5">
+                <img src="images/vivo phone.jpg" image-fluid />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dialog-footer">
+          <button type="button" class="btn-solid theme-secondary"
+            data-bs-dismiss="dialog">Close</button>
+        </div>
+      </dialog>
+      <section>
+        <dialog class="dialog dialog-xl dialog-scrollable"
+          id="samsung1" data-bs-theme="dark">
+          <div class="dialog-header">
+            <h1 class="dialog-title">OPPO</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="dialog"
+              aria-label="Close"></button>
+          </div>
+          <div class="dialog-body">
+            <div class="container">
+              <div class="row">
+                <div class="md:col-6 product-gallary ">
+
+                  <img src="images/samsung.jpg" image-fluid />
+                </div>
+
+                <div class="md:col-6">
+                  <p> Samsung is one of the world's leading smartphone brands,
+                    known for its advanced technology, innovative designs, and
+                    high-quality products. The company offers a wide range of
+                    smartphones, from affordable models to premium flagship
+                    devices. Samsung smartphones are popular for their beautiful
+                    displays, reliable performance, modern design, and advanced
+                    features. The brand continuously introduces new technologies
+                    to improve the mobile experience for users.
+                  </p>
+                  <p>
+                    Samsung smartphones offer features such as high-quality
+                    cameras, vibrant displays, powerful processors, long-lasting
+                    batteries, and advanced security options. Many devices also
+                    provide smooth performance for gaming, entertainment,
+                    photography, and everyday activities. Samsung focuses on
+                    innovation, durability, and user convenience while
+                    developing its smartphones. With its wide range of products
+                    and advanced technology, Samsung has become a trusted choice
+                    for millions of smartphone users around the world.
+                  </p>
+
+                </div>
+                <div class="md:col-4
+              product-gallary mt-5">
+                  <img src="images/sam1.png" image-fluid />
+                </div>
+                <div class="md:col-4  product-gallary mt-5">
+                  <img src="images/sam2.png" image-fluid />
+                </div>
+                <div class="md:col-4  product-gallary mt-5">
+                  <img src="images/sam3.webp" image-fluid />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dialog-footer">
+            <button type="button" class="btn-solid theme-secondary"
+              data-bs-dismiss="dialog">Close</button>
+          </div>
+        </dialog>
+      </section>
+
+    </main>
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous">
+
+    </script>
+
+  </body>
+  <footer>
+    <div class="container">
+      <div class="row">
+
+        <div class="md:col-4">
+           <h3>Quick Links</h3>
+           <hr>
+                <p>
+                    <a href="index.html">Home</a> |
+                    <a href="about.html">About</a> |
+                    <a href="products.html">Products</a> |
+                    <a href="photo.html">Gallery</a> |
+                    <a href="contact.html">Contact</a>
+                </p>
+        </div>
+        <div class="md:col-4">
+          <h3>Contact Us</h3>
+          <hr>
+           <p>📞 9021142599</p>
+                <p>✉️ saniyashaikh7860@gmail.com</p>
+                <p>📍 Pimpri, Maharashtra</p>
+        </div>
+        <style>
+                .social{
+                  font-size: 60px;
+
+                }
+                .bi-youtube{
+                  color:red
+                }
+                .bi-github{
+                  color: black;
+
+                }
+                .bi-instagram {
+                  color: #E1306C;
+                   }
+
+                  .bi-snapchat {
+                   color: #FFFC00;
+                    }
+              </style>
+        <div class="md:col-4">
+          
+                <h3>Social Media</h3>
+                <hr>
+
+                <a href="https://github.com/" 
+              target="_blank"><i class="bi bi-github social"></i>
+                </a>
+
+                <a href="https://www.instagram.com/shaikh___sanu786" target="_blank">
+                  <i class="bi bi-instagram social"></i>
+                </a>
+
+              <a href="https://www.snapchat.com/saniya_78s" target="_blank">
+                <i class="bi bi-snapchat social"></i>
+                </a>
+        </div>
+      </div>
+      <div class="col-12 text-center">
+                <hr>
+                <h3>© 2026 MobileShop. All Rights Reserved.</h3>
+            </div>
+  </footer>
+</html>
